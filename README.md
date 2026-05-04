@@ -4,8 +4,7 @@
 
 # Spring-Leaves
 
-[![SpringLeaves CI](https://github.com/XingZiNina/Spring-Leaves/actions/workflows/build.yml/badge.svg)](https://github.com/XingZiNina/Spring-for-LeavesMC/actions/workflows/build.yml)
-[![Download](https://img.shields.io/github/downloads/XingZiNina/Spring-for-LeavesMC/total?color=0&logo=github)](https://github.com/XingZiNina/Spring-Leaves/releases/latest)
+[![Spring-for-LeavesMC Download](https://img.shields.io/github/downloads/XingZiNina/Spring-for-LeavesMC/total?color=0&logo=github)](https://github.com/XingZiNina/Spring-Leaves/releases/latest)
 
 > 目前添加功能: 大木桶/末影箱 Leaves配置文件全注释化 优化碰撞降低带宽占用 Async-Entity-Chunky-Locate等 提高数据包性能 NBT网络包大小限制配置化 进度触发优化 异步结构搜索 世界生成性能优化 跳过 worldgen锁 高效Vec3i/BlockPos哈希算法 雨天熄灭营火 合成配方请求冷却 数据包/资源包zip加载优化 命令方块解析缓存 充能铁轨信号传播距离可配置(1x-4x) 兔子寻路修复 书籍标题长度限制 盾牌格挡/破碎音效修复 地平线服务端LOD协议支持 Krypton网络栈优化
 
