@@ -155,8 +155,6 @@
 
 ---
 
-<<<<<<< HEAD
-=======
 ## Packet Protector — 区块包保护机制
 
 在高复杂度的服务器环境中，区块包（`ClientboundLevelChunkWithLightPacket`）在经过多层 Netty pipeline 处理后可能被意外损坏，导致客户端断开连接并报出 `IndexOutOfBoundsException` 等网络协议错误。典型场景是 CraftEngine 等插件在解析区块 ByteBuf 时因格式不兼容而抛出异常，吞掉错误后发送损坏数据，最终导致客户端断连。
@@ -252,9 +250,6 @@ mics:
 [INFO] [PacketProtector] Retrying chunk [84, 53] for Steve
 ```
 
----
-
->>>>>>> 2ff764b3 (SpringLeaves: full codebase update with Packet Protector, CI overhaul, and upstream sync)
 ## `/leaves networkspeed` 指令说明
 
 `/leaves networkspeed` 用于查看服务端网络上传、下载统计，包括当前上传/下载速率和累计上传/下载流量。
