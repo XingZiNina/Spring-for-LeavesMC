@@ -285,7 +285,3 @@ mics:
 - **[shield-sounds-backport](https://github.com/Noryea/shield-sounds-backport)** — 盾牌格挡与破碎音效回移
 - **[Distant Horizons Server Plugin](https://gitlab.com/distant-horizons-team/distant-horizons-server-plugin/)** — Distant Horizons Mod 的 Bukkit 服务端协议与 LOD 数据支持
 - **[Krypton](https://github.com/astei/krypton)** — Minecraft 网络栈优化参考，包含 VarInt 与帧解码等网络路径优化
-
-[<img src="https://user-images.githubusercontent.com/21148213/121807008-8ffc6700-cc52-11eb-96a7-2f6f260f8fda.png" alt="" width="150">](https://www.jetbrains.com)
-
-[JetBrains](https://www.jetbrains.com/)，IntelliJ IDEA 的创造者，为 Leaves 提供了 [开源许可证](https://www.jetbrains.com/opensource/)。我们极力推荐使用 IntelliJ IDEA 作为你的 IDE。
