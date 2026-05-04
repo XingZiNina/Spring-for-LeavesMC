@@ -1,0 +1,29 @@
+package org.leavesmc.leaves.bot.agent.actions;
+
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.item.ItemStack;
+import org.jetbrains.annotations.NotNull;
+import org.leavesmc.leaves.bot.ServerBot;
+import org.leavesmc.leaves.entity.bot.actions.CraftSwapAction;
+import org.leavesmc.leaves.entity.bot.actions.CraftBotAction;
+
+public class ServerSwapAction extends AbstractBotAction<ServerSwapAction> {
+
+    public ServerSwapAction() {
+        super("swap");
+    }
+
+    @Override
+    public boolean doTick(@NotNull ServerBot bot) {
+        ItemStack mainHandItem = bot.getMainHandItem();
+        ItemStack offHandItem = bot.getOffhandItem();
+        bot.setItemInHand(InteractionHand.MAIN_HAND, offHandItem);
+        bot.setItemInHand(InteractionHand.OFF_HAND, mainHandItem);
+        return true;
+    }
+
+    @Override
+    public CraftBotAction<?, ServerSwapAction> asCraft() {
+        return new CraftSwapAction(this);
+    }
+}

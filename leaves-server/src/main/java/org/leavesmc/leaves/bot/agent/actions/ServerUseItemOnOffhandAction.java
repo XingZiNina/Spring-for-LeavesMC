@@ -1,0 +1,28 @@
+package org.leavesmc.leaves.bot.agent.actions;
+
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
+import org.leavesmc.leaves.bot.ServerBot;
+import org.leavesmc.leaves.entity.bot.actions.CraftUseItemOnOffhandAction;
+
+import static org.leavesmc.leaves.bot.agent.actions.ServerUseItemOnAction.useItemOn;
+import org.leavesmc.leaves.entity.bot.actions.CraftBotAction;
+
+public class ServerUseItemOnOffhandAction extends AbstractUseBotAction<ServerUseItemOnOffhandAction> {
+
+    public ServerUseItemOnOffhandAction() {
+        super("use_on_offhand");
+    }
+
+    @Override
+    protected boolean interact(@NotNull ServerBot bot) {
+        BlockHitResult hitResult = bot.getBlockHitResult();
+        return useItemOn(bot, hitResult, InteractionHand.OFF_HAND).consumesAction();
+    }
+
+    @Override
+    public CraftBotAction<?, ServerUseItemOnOffhandAction> asCraft() {
+        return new CraftUseItemOnOffhandAction(this);
+    }
+}
